@@ -56,7 +56,7 @@ foreach ($json_a["servers"] as $key => $value) {
             echo '<div class="card text-white bg-danger mb-3" style="max-width: 18rem;">';
             echo '<div class="card-header">' . strtoupper($key) . '</div>';
             echo '<div class="card-body">';
-            echo '<h5 class="card-title">' . $value["status"] . '</h5>';
+            echo '<h5 class="card-title">' . strtoupper($value["status"]) . '</h5>';
             echo '<p class="card-text">Error: ' . $value["message"] . '</p>';
             echo '<p class="card-text">Raised: ' . $value["raised"] . '</p>';
             echo '</div>';
@@ -78,7 +78,7 @@ foreach ($json_a["servers"] as $key => $value) {
         echo '<div class="card text-white bg-warning mb-3" style="max-width: 18rem;">';
         echo '<div class="card-header">' . strtoupper($key) . '</div>';
         echo '<div class="card-body">';
-        echo '<h5 class="card-title">' . $value["status"] . '</h5>';
+        echo '<h5 class="card-title">' . strtoupper($value["status"]) . '</h5>';
         echo '<p class="card-text">Error: ' . $value["message"] . '</p>';
         echo '<p class="card-text">Raised: ' . $value["raised"] . '</p>';
         echo '</div>';
@@ -100,7 +100,7 @@ foreach ($json_a["servers"] as $key => $value) {
         echo '<div class="card text-white bg-success mb-3" style="max-width: 18rem;">';
         echo '<div class="card-header">' . strtoupper($key) . '</div>';
         echo '<div class="card-body">';
-        echo '<h5 class="card-title">' . $value["status"] . '</h5>';
+        echo '<h5 class="card-title">' . strtoupper($value["status"]) . '</h5>';
         echo '</div>';
         echo '</div>';
         $card = $card+1;
